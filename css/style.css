@@ -1,0 +1,403 @@
+@charset "UTF-8";
+html,
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+* {
+    font-family: "Oswald", 微軟正黑體;
+}
+
+
+/* 導覽列 */
+
+nav.navbar {
+    transition: 0.5s;
+}
+
+nav.navbar a {
+    transition: 0.5s;
+}
+
+nav.navbar.at_top {
+    background-color: transparent;
+}
+
+nav.navbar.at_top a,
+nav.navbar.at_top a:visited {
+    color: #ececec;
+}
+
+nav.navbar.at_top a,
+nav.navbar.at_top a:hover {
+    color: #33ccff;
+}
+
+nav.navbar.at_top a,
+nav.navbar.at_top a:link {
+    color: #ececec;
+}
+
+
+/* header */
+
+header#header {
+    height: 940px;
+    position: relative;
+    background-color: #282f44;
+    text-align: center;
+}
+
+header#header h1 {
+    color: #ececec;
+    padding: 250px 0px;
+    font-size: 80px;
+}
+
+header#header .mountain {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    width: 95%;
+    animation: uping 2s both;
+}
+
+@keyframes uping {
+    0% {
+        bottom: -100px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+header#header .explore {
+    color: #f5d061;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+header#header .explore.at_top {
+    opacity: 1;
+}
+
+header#header .explore:after {
+    content: "v";
+    display: block;
+    transform: scaleX(1.2) scaleY(0.5);
+}
+
+section {
+    padding: 60px;
+    position: relative;
+    height: 855px;
+}
+
+section#about {
+    background-color: #e6af2e;
+    color: black;
+}
+
+section#about #cat {
+    width: 40%;
+    position: absolute;
+    right: 50px;
+    bottom: -2px;
+    max-width: 500px;
+}
+
+section#about #cross {
+    position: absolute;
+}
+
+section#about #cross:before,
+section#about #cross:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+    left: 50%;
+}
+
+section#about #cross:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+section#about .container {
+    transform: rotate(15deg) scale(0.9);
+}
+
+section#about .row {
+    height: 150px;
+}
+
+section#about .row .col-sm-4 {
+    height: 150px;
+}
+
+section#about .row .col-sm-4 .btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(7deg);
+}
+
+section#about .r1text {
+    font-size: 80px;
+    transition: 0.1s;
+}
+
+section#about .r2text {
+    font-size: 35px;
+    transition: 0.2s;
+}
+
+section#about .r3text {
+    font-size: 50px;
+    text-align: right;
+    transition: 0.3s;
+}
+
+section#about .tri {
+    transform: rotate(-15deg);
+}
+
+section#about .tri1 {
+    width: 350px;
+}
+
+section#about .tri2 {
+    width: 20px;
+    margin-left: 20px;
+}
+
+section#about .tri3 {
+    width: 150px;
+    margin-left: 70%;
+}
+
+section#about .tri4 {
+    width: 70px;
+    margin-left: 100%;
+}
+
+section#about .tri5 {
+    width: 80px;
+    margin-left: 100%;
+}
+
+section#about .marginbottom {
+    position: absolute;
+    top: calc(100% - 2px);
+    width: 60%;
+    z-index: 5;
+}
+
+section#service {
+    height: 100%;
+    background-color: #ececec;
+    color: #282f44;
+    /*border: solid 1px black;*/
+}
+
+section#service .col-sm-12.items {
+    margin: 50px 0px;
+}
+
+section#service .col-sm-12.items img {
+    width: 1000px;
+    height: 550px;
+}
+
+section#service .col-sm-12 h1 {
+    font-size: 75px;
+}
+
+section#service .col-sm-12 h3 {
+    text-align: center;
+}
+
+section#service .col-sm-12 ul {
+    margin: 20px 10px;
+	
+}
+
+section#service .col-sm-12 li {
+    padding: 15px;
+	font-size: 22px;
+	
+}
+
+section#service .col-sm-12 .title {
+    font-size: 45px;
+}
+
+section#service .col-sm-12 .text {
+    font-size: 22px;
+    text-align: left;
+    line-height: 40px;
+    text-indent: 44px;
+}
+
+section#service .col-sm-12 .text2 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px 100px;
+    text-indent: 44px;
+}
+
+section#service .col-sm-12 hr {
+    border: solid 2px #282f44;
+}
+
+section#service .col-sm-6 {
+    /*border: solid 1px black;*/
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px 10px;
+}
+
+section#service img {
+    height: 100%;
+    max-width: 1000px;
+}
+
+section#contact {
+    padding-top: 120px;
+    background-color: #ececec;
+    color: #282f44;
+    overflow: hidden;
+}
+
+section#contact h1 {
+    font-size: 48px;
+}
+
+section#contact p {
+    font-size: 32px;
+}
+
+section#contact .cat {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+section#contact #cat_blue {
+    right: 10%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+section#contact #cat_grey {
+    right: 18%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+section#contact #cat_yellow {
+    right: 26%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+section#contact .mail {
+    max-width: 500px;
+    position: relative;
+}
+
+section#contact .body {
+    border: solid 1px black;
+    background-color: #ececec;
+    color: #282f44;
+    padding: 30px;
+    padding-left: 40px;
+    transform: translateX(-30px);
+}
+
+section#contact .body label,
+section#contact .body input {
+    display: block;
+}
+
+section#contact .body input,
+section#contact .body textarea {
+    background-color: transparent;
+    border: none;
+    border: solid 2px #282f44;
+}
+
+section#contact .body label {
+    margin-top: 10px;
+}
+
+section#contact .body textarea {
+    width: 100%;
+    height: 300px;
+}
+
+section#contact .body .r {
+    margin-top: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 105px;
+    border-radius: 5px;
+}
+
+section#contact .body .s {
+    border-radius: 5px;
+}
+
+section#contact .body .r:active {
+    background-color: black;
+    color: white;
+}
+
+section#contact .body .s:active {
+    background-color: black;
+    color: white;
+}
+
+section#contact .body .in1 {
+    width: 125px;
+}
+
+section#contact .body .in2 {
+    width: 220px;
+}
+
+section#contact .cover {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    transform: rotate(5deg) scale(2) translate(-50%, -50%);
+}
+
+section#contact .cover img {
+    width: 120%;
+}
+
+footer#footer {
+    background-color: #282f44;
+    text-align: center;
+}
+
+footer#footer h1 {
+    color: #ececec;
+    font-size: 40px;
+    padding: 100px 0px;
+}
